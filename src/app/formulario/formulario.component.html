@@ -1,0 +1,24 @@
+<form [formGroup]="formulario" (ngSubmit)="onSubmit()" class="box">
+    <h1>Registro de personas</h1>
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput type="text" class="form-control" formControlName="nombre">
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Apellido</mat-label>
+        <input matInput type="text" class="form-control" formControlName="apellidos">
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Empresa</mat-label>
+        <input matInput type="text" class="form-control" formControlName="empresa">
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Teléfono</mat-label>
+        <input matInput type="text" class="form-control" formControlName="telefono">
+    </mat-form-field>
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="text" class="form-control" formControlName="email">
+    </mat-form-field>
+    <button mat-raised-button color="primary">Enviar</button>  
+</form>
